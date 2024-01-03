@@ -43,26 +43,28 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     message = text=event.message.text
-    if re.match('告訴我秘密',message):
+    if re.match('更多資訊',message):
         buttons_template_message = TemplateSendMessage(
         alt_text='這是樣板傳送訊息',
         template=ButtonsTemplate(
-            thumbnail_image_url='https://i.imgur.com/kNBl363.jpg',
-            title='中華民國',
-            text='選單功能－TemplateSendMessage',
+            thumbnail_image_url='https://i.imgur.com/by07qaw.png',
+            title='寵物用品公司',
+            text='選單功能',
             actions=[
                 PostbackAction(
                     label='這是PostbackAction',
-                    display_text='顯示文字',
+                    display_text='官方網站',
                     data='實際資料'
+                    uri='https://chongwuyongpinzhuanmai.webnode.tw/'
                 ),
                 MessageAction(
-                    label='這是MessageAction',
+                    label='狗狗產品',
+                    uri='https://chongwuyongpinzhuanmai.webnode.tw/%e7%8b%97%e7%8b%97%e7%94%a2%e5%93%81/'
                     text='實際資料'
                 ),
                 URIAction(
-                    label='這是URIAction',
-                    uri='https://en.wikipedia.org/wiki/Taiwan'
+                    label='貓咪產品',
+                    uri='https://chongwuyongpinzhuanmai.webnode.tw/%e8%b2%93%e5%92%aa%e7%94%a2%e5%93%81/'
                 )
             ]
         )
