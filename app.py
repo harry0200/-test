@@ -47,16 +47,19 @@ def handle_message(event):
         buttons_template_message = TemplateSendMessage(
         alt_text='這是樣板傳送訊息',
         template=ButtonsTemplate(
-            thumbnail_image_url='https://imgur.com/bY07QAW',
+            thumbnail_image_url='https://i.imgur.com/bY07QAW.png',
             title='寵物用品公司',
             text='選單功能',
             actions=[
                 PostbackAction(
                     label='官方網站',
+                    display_text = '顯示文字',
+                    data= '詳細資料',
                     uri='https://chongwuyongpinzhuanmai.webnode.tw/'
                 ),
                 MessageAction(
                     label='購買狗狗商品',
+                    text= '實際資料',
                     uri='https://chongwuyongpinzhuanmai.webnode.tw/%e7%8b%97%e7%8b%97%e7%94%a2%e5%93%81/'
                 ),
                 URIAction(
