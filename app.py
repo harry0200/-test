@@ -63,9 +63,6 @@ def handle_message(event):
                     label='購買貓咪商品',
                     uri='https://chongwuyongpinzhuanmai.webnode.tw/%e8%b2%93%e5%92%aa%e7%94%a2%e5%93%81/'
                 )
-                URIAction(
-                    label='尚未新增'
-                )
             ]
         )
     )
