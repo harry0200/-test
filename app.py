@@ -59,7 +59,7 @@ def handle_message(event):
                 ),
                 MessageAction(
                     label='狗狗產品',
-                    uri='https://chongwuyongpinzhuanmai.webnode.tw/%e7%8b%97%e7%8b%97%e7%94%a2%e5%93%81/'
+                    uri='https://chongwuyongpinzhuanmai.webnode.tw/%e7%8b%97%e7%8b%97%e7%94%a2%e5%93%81/',
                     text='實際資料'
                 ),
                 URIAction(
