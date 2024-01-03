@@ -54,7 +54,7 @@ def handle_message(event):
                 PostbackAction(
                     label='這是PostbackAction',
                     display_text='官方網站',
-                    data='實際資料'
+                    data='實際資料',
                     uri='https://chongwuyongpinzhuanmai.webnode.tw/'
                 ),
                 MessageAction(
