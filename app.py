@@ -66,6 +66,30 @@ def handle_message(event):
             ]
         )
     )
+    if re.match('更多資訊2',message):
+        image_carousel_template_message = TemplateSendMessage(
+            alt_text='你好',
+            template=ImageCarouselTemplate(
+                columns=[
+                    ImageCarouselColumn(
+                        image_url='https://i.imgur.com/kNBl363.jpg',
+                        action=PostbackAction(
+                            label='貓咪',
+                            display_text='貓糧、飲水機、逗貓棒...',
+                            data='action=001'
+                        )
+                    ),
+                    ImageCarouselColumn(
+                        image_url='https://i.imgur.com/GBPcUEP.png',
+                        action=PostbackAction(
+                            label='狗狗',
+                            display_text='骨頭玩具、咀嚼用玩具、牽繩...',
+                            data='action=002'
+                        )
+                    )
+                ]
+            )
+        )
         line_bot_api.reply_message(event.reply_token, buttons_template_message)
     else:
         line_bot_api.reply_message(event.reply_token, TextSendMessage(message))
