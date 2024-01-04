@@ -47,7 +47,7 @@ def handle_message(event):
         buttons_template_message = TemplateSendMessage(
         alt_text='這是樣板傳送訊息',
         template=ButtonsTemplate(
-            thumbnail_image_url='https://i.imgur.com/by07qaw.png',
+            thumbnail_image_url='https://i.imgur.com/ZHf1apg.jpg',
             title='寵物用品公司',
             text='選單功能',
             actions=[
