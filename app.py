@@ -62,14 +62,6 @@ def handle_message(event):
                 URIAction(
                     label='貓咪產品',
                     uri='https://chongwuyongpinzhuanmai.webnode.tw/%e8%b2%93%e5%92%aa%e7%94%a2%e5%93%81/'
-                ),
-                MessageAction(
-                    label='店家資訊',
-                    text='店家資訊'
-                ),
-                MessageAction(
-                    label='預約',
-                    text='預約'
                 )
             ]
         )
